@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="page-view">
         Programming ability | Things I am specialized in
     </div>   
 </template>

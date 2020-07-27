@@ -1,3 +1,5 @@
-- do all five pages
+tabs:
+- LANDING
+- EXPERIENCE?
+- GAMES
 
-- mess around with general formatting of the page

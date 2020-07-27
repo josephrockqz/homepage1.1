@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Landing from '@/views/Landing.vue';
-import Me from '@/views/Me.vue';
 import Portfolio from '@/views/Portfolio.vue';
 import Services from '@/views/Services.vue';
 import Games from '@/views/Games.vue'
@@ -13,11 +12,6 @@ const routes = [
     path: '/',
     name: 'Landing',
     component: Landing
-  },
-  {
-    path: '/me',
-    name: 'Me',
-    component: Me
   },
   {
     path: '/portfolio',

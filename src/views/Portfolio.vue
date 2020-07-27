@@ -1,6 +1,6 @@
 <template>
-    <div>
-        Github | Work experience
+    <div id="page-view">
+        
     </div>   
 </template>
 
