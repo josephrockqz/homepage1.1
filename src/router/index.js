@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Landing from '@/views/Landing.vue';
-import Portfolio from '@/views/Portfolio.vue';
-import Services from '@/views/Services.vue';
-import Games from '@/views/Games.vue'
+import Experience from '@/views/Experience.vue';
+import Skills from '@/views/Skills.vue';
+import Games from '@/views/Games.vue';
+import ContactMe from '@/views/ContactMe.vue';
 
 Vue.use(VueRouter);
 
@@ -14,19 +15,24 @@ const routes = [
     component: Landing
   },
   {
-    path: '/portfolio',
-    name: 'Portfolio',
-    component: Portfolio
+    path: '/experience',
+    name: 'Experience',
+    component: Experience
   },
   {
-    path: '/services',
-    name: 'Services',
-    component: Services
+    path: '/skills',
+    name: 'Skills',
+    component: Skills
   },
   {
     path: '/games',
     name: 'Games',
     component: Games
+  },
+  {
+    path: '/contact-me',
+    name: 'Contact Me',
+    component: ContactMe
   },
   {
     path: '*',

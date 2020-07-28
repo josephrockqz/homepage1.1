@@ -1,5 +1,5 @@
-tabs:
-- LANDING
-- EXPERIENCE?
-- GAMES
-
+- figure out how to mount pygames
+- finish populating pages
+- change fonts?
+- figure out how to align items horizontally on mobile
+- create some sort of distinguishing body or border for the page-view

@@ -1,6 +1,6 @@
 <template>
     <div id="page-view">
-        
+        XP
     </div>   
 </template>
 
