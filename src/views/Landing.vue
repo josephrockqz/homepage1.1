@@ -5,7 +5,7 @@
 
             </div>    
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center;">
-                <img src="../../public/family.jpeg" style="width: 250px; height: auto; margin: auto; border-radius: 50%; text-align: center;" class="w3-circle" />
+                <img src="../../public/headshot.jpeg" style="width: 300px; height: auto; margin: auto; border-radius: 50%; text-align: center;" class="w3-circle" />
                 <div style="margin: 25px 0px 25px 40px;">
                     <p style="color: grey; text-align: left; margin: 0px 0px -10px 2px; font-size: 16px;">HELLO! I AM</p>
                     <p style="color: #000000; text-align: left; margin: 0; font-size: 48px;">JOSEPH <span style="color: #00757b;">ROCK</span></p>

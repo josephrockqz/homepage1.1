@@ -12,7 +12,7 @@
       </b-nav>
     </span>  
 
-    <router-view/>
+    <router-view />
 
   </div>
 </template>
