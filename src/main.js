@@ -9,6 +9,7 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faFacebook} from '@fortawesome/free-brands-svg-icons';
+import {faBinoculars} from '@fortawesome/free-solid-svg-icons/faBinoculars';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
 Vue.use(BootstrapVue);
@@ -17,6 +18,7 @@ Vue.use(IconsPlugin);
 library.add(faLinkedin);
 library.add(faGithub);
 library.add(faFacebook);
+library.add(faBinoculars);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

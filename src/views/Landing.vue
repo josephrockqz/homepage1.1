@@ -17,9 +17,9 @@
                         </b-button>
                     </div>    
                     <div style="text-align: left;">
-                        <font-awesome-icon :icon="['fab', 'linkedin']" style="color: #0073b0; width: 32px; height: 32px; margin-right: 12px; cursor: pointer" />
-                        <font-awesome-icon :icon="['fab', 'github']" style="color: #24292e; width: 32px; height: 32px; margin-right: 12px; cursor: pointer" />
-                        <font-awesome-icon :icon="['fab', 'facebook']" style="color: #3c5998; width: 32px; height: 32px; cursor: pointer" />
+                        <font-awesome-icon @click="openLink('linkedin')" :icon="['fab', 'linkedin']" style="color: #0073b0; width: 32px; height: 32px; margin-right: 12px; cursor: pointer" />
+                        <font-awesome-icon @click="openLink('github')" :icon="['fab', 'github']" style="color: #24292e; width: 32px; height: 32px; margin-right: 12px; cursor: pointer" />
+                        <font-awesome-icon @click="openLink('facebook')" :icon="['fab', 'facebook']" style="color: #3c5998; width: 32px; height: 32px; cursor: pointer" />
                     </div>
                 </div>
             </div>
@@ -40,6 +40,15 @@ export default {
     },
 
     methods: {
+        openLink(website) {
+            if (website === 'github') {
+                window.open('https://github.com/josephrockqz');
+            } else if (website === 'linkedin') {
+                window.open('https://www.linkedin.com/in/joseph-rock-5bb234187/');
+            } else if (website === 'facebook') {
+                window.open('https://www.facebook.com/joseph.rock.372');
+            }
+        },
         pushPathToRouter(pathName) {
             store.dispatch('pushPathToRouter', {
                 pathName: pathName
