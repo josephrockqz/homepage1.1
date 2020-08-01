@@ -1,3 +1,3 @@
 - figure out how to mount pygames
-- figure out how to align items horizontally on mobile
-- create some sort of distinguishing body or border for the page-view
+
+- bug fix layout by trying different resolutions
