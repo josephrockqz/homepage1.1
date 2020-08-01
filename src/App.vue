@@ -1,8 +1,8 @@
 <template>
   <div id="app" style="margin: -10px -10px;">
 
-    <span style="display: flex; justify-content: space-between; align-items: center;">
-      <h1 style="padding: 8px 40px; margin: 0; font-size: 48px;">JOSEPH <span style="color: #00757b;">ROCK</span></h1>
+    <span style="display: flex; justify-content: space-between; align-items: center; background-color: black;">
+      <h1 style="padding: 8px 40px; margin: 0; font-size: 48px; color: #FFFFFF;">JOSEPH <span style="color: #00757b;">ROCK</span></h1>
       <b-nav pills id="nav" style="padding: 30px 24px;">
         <b-nav-item to="/" id="landing" style="font-size: 32px; cursor: pointer">Landing</b-nav-item>
         <b-nav-item to="/skills" id="skills" style="font-size: 32px; cursor: pointer">Skills</b-nav-item>
@@ -10,7 +10,7 @@
         <b-nav-item to="/games" id="games" style="font-size: 32px; cursor: pointer">Games</b-nav-item>
         <b-nav-item to="/contact-me" id="contact-me" style="font-size: 32px; cursor: pointer; text-align: left">Contact Me</b-nav-item>
       </b-nav>
-    </span>  
+    </span>
 
     <router-view />
 
@@ -26,11 +26,23 @@ export default {
       landingActiveBool: false,
       skillsActiveBool: false,
       experienceActiveBool: false,
-      gamesActiveBool: false
+      gamesActiveBool: false,
+
+      isDeviceMobile: false
     }
   },
 
+  beforeCreate() {
+  },
+
   methods: {
+    isMobile() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
+    },
     navigateRouter(pathName, idName) {
       /* PUSHES REPECTIVE PATH TO THE ROUTER AND INCREMENTS THE COUNT OF PAGES VISITED */
       store.dispatch('pushPathToRouter', {
@@ -52,9 +64,17 @@ export default {
 #nav {
   padding: 30px 10px;
 }
+ 
+.page-view {
+  height: calc(100vh - 130px);
+  line-height: calc(100vh - 130px);
+  text-align: center;
+}
 
-#page-view {
-  padding: 15px;
+.page-view-span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 a.nav-link {
