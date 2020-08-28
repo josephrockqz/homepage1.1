@@ -14,7 +14,7 @@
                         <div style="margin-bottom: 30px; text-align: left;">
                             <b-button @click="pushPathToRouter('contact-me')" style="background-color: #e8ac21; border: 1px solid #e8ac21; margin-right: 15px;">CONTACT ME</b-button>
                             <b-button style="background-color: #e8ac21; border: 1px solid #e8ac21;">
-                                <a href="/cv_josephrock.pdf" download="CV_JosephRock.pdf">DOWNLOAD CV</a>
+                                <a href="/resume_technical.pdf" download="CV_JosephRock.pdf">DOWNLOAD CV</a>
                             </b-button>
                         </div>    
                         <div style="text-align: left;">
