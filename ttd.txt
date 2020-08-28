@@ -1,3 +1,0 @@
-- figure out how to mount pygames
-
-- bug fix layout by trying different resolutions

@@ -8,7 +8,7 @@
                 <span>Third year Computer Science and Mathematics Major at the University of Virginia</span>
 
                 <h2 style="margin-top: 30px; color: #00757b;">Work Experience</h2>
-                <div style="text-decoration: underline; font-size: 20px;">Montel Technnologies</div>
+                <div style="text-decoration: underline; font-size: 20px; padding-bottom: 10px;">Montel Technnologies</div>
                 <span>Made surveillance-oriented web applications using Vue.js</span>
 
             </div>    
