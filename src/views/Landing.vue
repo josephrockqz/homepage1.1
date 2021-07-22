@@ -46,7 +46,7 @@ export default {
             if (website === 'github') {
                 window.open('https://github.com/josephrockqz');
             } else if (website === 'linkedin') {
-                window.open('https://www.linkedin.com/in/joseph-rock-5bb234187/');
+                window.open('https://www.linkedin.com/in/joseph-rock/');
             } else if (website === 'facebook') {
                 window.open('https://www.facebook.com/joseph.rock.372');
             }
