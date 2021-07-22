@@ -27,7 +27,8 @@
 
                 <div style="margin-left: 75px; font-size: 20px;">- Python</div>
                 <div style="margin-left: 75px; font-size: 20px;">- Java</div>
-                <div style="margin-left: 75px; font-size: 20px; margin-bottom: 15px;">- Javascript</div>
+                <div style="margin-left: 75px; font-size: 20px;">- Javascript</div>
+                <div style="margin-left: 75px; font-size: 20px; margin-bottom: 15px;">- C++</div>
 
             </div>       
         
