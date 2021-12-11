@@ -5,6 +5,7 @@ import Experience from '@/views/Experience.vue';
 import Skills from '@/views/Skills.vue';
 import Games from '@/views/Games.vue';
 import ContactMe from '@/views/ContactMe.vue';
+import Resume from '@/views/Resume.vue';
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/contact-me',
     name: 'Contact Me',
     component: ContactMe
+  },
+  {
+    path: '/resume',
+    name: 'Resume',
+    component: Resume
   },
   {
     path: '*',
