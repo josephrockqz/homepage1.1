@@ -1,0 +1,28 @@
+Major parts:
+    - Cloudflare
+        + Domain name points to an IP address (AWS EC2 instance) where niginx and source code resides
+    - MongoDB
+        + rock.joseph account
+        + blue2red sits on EC2 instance then makes requests to the MongoDB server
+    - AWS
+        + On-demand EC2 instance hosts nginx service as well as contains source code
+    - Nginx
+        + web server software that accepts incoming requests directed by CLoudflare's DNS capabilities
+    - SSL
+        + As of now I forgot how I did this exactly
+
+When changing AWS accounts:
+    - point Cloudflare DNS to new/correct IP address
+    - put joerock.dev.pem and joerock.dev.key on new EC2 instance
+    - https://www.nginx.com/blog/setting-up-nginx/
+    - copy nginx files over to github repo from old ec2 instance
+        + /etc/nginx/sites-enabled
+        + /etc/nginx/sites-available
+    - nginx should handle joerock.dev, bluedred, and node subdomains
+    - SSL is set up with nginx service
+    - use git for source code to be on new EC2 instance
+        + homepage1.1, bluedred, bluedred_backend
+    - create new EC2 instance in account and be able to SSH into it
+    - get nginx set up on new EC2 instance
+    - npm build vue projects on new EC2 instance (nneed dist folders for nginx to point to)
+    - only thing that needs to be done for MongoDB is for the bluedred backend to be configured on new EC2 instance
