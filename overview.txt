@@ -19,6 +19,7 @@ When changing AWS accounts:
         + /etc/nginx/sites-enabled
         + /etc/nginx/sites-available
     - nginx should handle joerock.dev, bluedred, and node subdomains
+        + systemctl start nginx service, etc.
     - SSL is set up with nginx service
     - use git for source code to be on new EC2 instance
         + homepage1.1, bluedred, bluedred_backend
